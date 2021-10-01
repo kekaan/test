@@ -18,21 +18,21 @@ namespace test
                 Console.Write(i + " ");
 
         }
-        static string PrintCities(string[] array)
+        static string PrintCities(string[] array) //5 минут
         {
             string result = "";
             for (int i = 0; i < array.Length; i++)
                 result += array[i] + ", ";
             return result.Remove(result.Length - 2, 2) + ".";
         }
-        static int Round(double value)
+        static int Round(double value) //5 минут
         {
             if (value % 5 < 2.5)
                 return (int)(value / 5) * 5;
             else
                 return (int)(value / 5 + 1) * 5;
         }
-        static string Declension(int value)
+        static string Declension(int value) //5 минут
         {
             string word = "компьютер";
             if (value % 100 > 10 && value % 100 < 20)
@@ -43,7 +43,7 @@ namespace test
                 return value + " " + word + "а";
             else return value + " " + word + "ов";
         }
-        static bool IsPrime(int value)
+        static bool IsPrime(int value) //5 минут
         {
             bool result = true;
             if (value > 1)
@@ -58,7 +58,7 @@ namespace test
             else result = false;
             return result;
         }
-        static List<int> Coincidences(int[] array1, int[] array2)
+        static List<int> Coincidences(int[] array1, int[] array2) //20 минут
         {
             List<int> result = new List<int>();
             Dictionary<int, int> array_unique_1= new Dictionary<int, int>();
